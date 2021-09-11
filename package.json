@@ -1,5 +1,5 @@
 {
-  "name": "test",
+  "name": "nuxt-template",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -8,14 +8,25 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
-    "lint": "yarn lint:js",
-    "test": "jest"
+    "lint:style": "stylelint \"**/*.{vue,css}\" --ignore-path .gitignore",
+    "prepare": "husky install",
+    "lint": "yarn lint:js && yarn lint:style"
+  },
+  "lint-staged": {
+    "*.{js,vue}": "eslint",
+    "*.{css,vue}": "stylelint"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/pwa": "^3.3.5",
+    "@types/isotope-layout": "^3.0.9",
     "core-js": "^3.15.1",
-    "nuxt": "^2.15.7"
+    "include-media": "^1.4.10",
+    "isotope-layout": "^3.0.6",
+    "normalize.css": "^8.0.1",
+    "nuxt": "^2.15.7",
+    "nuxt-property-decorator": "^2.9.1",
+    "vue-property-decorator": "^9.1.2"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.14.7",
@@ -23,16 +34,18 @@
     "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/eslint-config-typescript": "^6.0.1",
     "@nuxtjs/eslint-module": "^3.0.2",
-    "@vue/test-utils": "^1.2.1",
-    "babel-core": "7.0.0-bridge.0",
-    "babel-jest": "^27.0.5",
+    "@nuxtjs/stylelint-module": "^4.0.0",
     "eslint": "^7.29.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-vue": "^7.12.1",
-    "jest": "^27.0.5",
+    "fibers": "^5.0.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^10.5.4",
     "prettier": "^2.3.2",
-    "ts-jest": "^27.0.3",
-    "vue-jest": "^3.0.4"
+    "sass": "^1.39.0",
+    "sass-loader": "10",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^22.0.0"
   }
 }
