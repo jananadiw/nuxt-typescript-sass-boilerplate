@@ -1,4 +1,4 @@
-# test-nuxt
+# A Nuxt Boilerplate with Typescript and SASS
 
 ## Build Setup
 
