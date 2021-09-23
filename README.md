@@ -32,14 +32,6 @@ The components directory contains your Vue.js components. Components make up the
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
 
 
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
 ### `store`
 
 This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
