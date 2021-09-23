@@ -1,6 +1,6 @@
-# A Nuxt Boilerplate with Typescript and SASS
+## A Nuxt Boilerplate with Typescript and SASS
 
-## Build Setup
+### Build Setup
 
 ```bash
 # install dependencies
