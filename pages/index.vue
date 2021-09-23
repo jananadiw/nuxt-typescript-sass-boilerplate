@@ -2,7 +2,10 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import { Component, Vue } from 'nuxt-property-decorator';
+@Component({
+})
+export default class Home extends Vue {
 
-export default Vue.extend({})
+}
 </script>
