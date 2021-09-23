@@ -2,7 +2,14 @@
 
 >  A Nuxt boilerplate with Typescript installed along with Sass. Type definitions are installed and set up for Nuxt, Jest and Vue.
 
-### Build Setup
+## Features
+
+- Typescript support (Types for Vue, Nuxt, Vue)
+- Installed sass and sass-loader packages 
+- Added Scss style extentions in nuxt config file.
+- Custom assets directory easy to scafold
+
+## Build Setup
 
 ```bash
 # install dependencies
@@ -20,3 +27,43 @@ $ yarn generate
 ```
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+
+
+## Directory Structure
+
+```js
+.
+├── assets
+│   └── sass // styles
+├── components // all Vue Components can be used in layouts, pages
+│   ├── common // shared components in multiple pages
+│   │   ├── ui // ui components (Checkbox, NumberInput,...)
+│   │   └── ... // other featured common components
+│   ├── layout // components to be used in layouts
+│   ├── ...
+│   ├── accounts // components grouped by pages
+│   └── payee
+│       └── PayeeInfo.vue // (Component File Naming: Pascal-Case)
+├── layouts // layout components
+│   ├── default.vue
+│   ├── error.vue // error page
+│   └── ...
+├── middleware
+├── mixins
+├── pages // route pages
+│   ├── ...
+│   ├── payment-info // (Page File Naming: kebab-case)
+│   └── index.vue
+├── plugins
+├── services // business logics
+├── static // static files(images, ...)
+├── store // vuex store
+├── test
+├── types // all types (interfaces, enums and constants)
+│   ├── ...
+│   └── payments
+│       ├── constants
+│       ├── enums
+│       └── interfaces
+└── utils
+```
