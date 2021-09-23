@@ -1,4 +1,6 @@
-## A Nuxt Boilerplate with Typescript and SASS
+## Vue Nuxt Typescript and Scss Boilerplate 
+
+>  A Nuxt boilerplate with Typescript installed along with Sass. Type definitions are installed and set up for Nuxt, Jest and Vue.
 
 ### Build Setup
 
@@ -22,12 +24,6 @@ For detailed explanation on how things work, check out the [documentation](https
 ## Special Directories
 
 You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
-
-### `assets`
-
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
 
 ### `components`
 
