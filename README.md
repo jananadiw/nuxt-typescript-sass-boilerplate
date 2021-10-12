@@ -4,10 +4,10 @@
 
 ## Features
 
-- Typescript support (Types for Vue, Nuxt, Vue)
+- Typescript support
 - Installed sass and sass-loader packages 
-- Added Scss style extentions in nuxt config file.
-- Custom assets directory easy to scafold
+- Configured Scss style extentions in nuxt config file.
+- Easy to scafold custom assets directory
 
 ## Build Setup
 
