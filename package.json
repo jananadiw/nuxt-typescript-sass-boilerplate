@@ -1,52 +1,48 @@
 {
-  "name": "nuxt-template",
+  "name": "nuxt-typescript-template",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": "16.14.0"
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
-    "lint:style": "stylelint \"**/*.{vue,css}\" --ignore-path .gitignore",
-    "prepare": "husky install",
-    "lint": "yarn lint:js && yarn lint:style"
-  },
-  "lint-staged": {
-    "*.{js,vue}": "eslint",
-    "*.{css,vue}": "stylelint"
+    "lint:js": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore .",
+    "lint:prettier": "prettier --check .",
+    "lint": "npm run lint:js && npm run lint:prettier",
+    "lintfix": "prettier --write --list-different . && npm run lint:js -- --fix"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.13.6",
-    "@nuxtjs/pwa": "^3.3.5",
-    "@types/isotope-layout": "^3.0.9",
-    "core-js": "^3.15.1",
-    "include-media": "^1.4.10",
-    "isotope-layout": "^3.0.6",
+    "core-js": "^3.19.3",
     "normalize.css": "^8.0.1",
-    "nuxt": "^2.15.7",
+    "nuxt": "^2.15.8",
     "nuxt-property-decorator": "^2.9.1",
-    "vue-property-decorator": "^9.1.2"
+    "vue": "^2.6.14",
+    "vue-property-decorator": "^9.1.2",
+    "vue-server-renderer": "^2.6.14",
+    "vue-template-compiler": "^2.6.14",
+    "vue2-datepicker": "^3.10.4",
+    "vuex-module-decorators": "^2.0.0",
+    "webpack": "^4.46.0"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.14.7",
-    "@nuxt/types": "^2.15.7",
+    "@babel/eslint-parser": "^7.16.3",
+    "@nuxt/types": "^2.15.8",
     "@nuxt/typescript-build": "^2.1.0",
-    "@nuxtjs/eslint-config-typescript": "^6.0.1",
+    "@nuxtjs/eslint-config-typescript": "^8.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
-    "@nuxtjs/stylelint-module": "^4.0.0",
-    "@types/jest": "^27.0.2",
-    "eslint": "^7.29.0",
+    "@types/vue2-datepicker": "^3.3.1",
+    "eslint": "^8.4.1",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-nuxt": "^2.0.0",
-    "eslint-plugin-vue": "^7.12.1",
-    "fibers": "^5.0.0",
-    "husky": "^6.0.0",
-    "lint-staged": "^10.5.4",
-    "prettier": "^2.3.2",
-    "sass": "^1.39.0",
-    "sass-loader": "10",
-    "stylelint-config-prettier": "^8.0.2",
-    "stylelint-config-standard": "^22.0.0"
+    "eslint-plugin-nuxt": "^3.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.2.0",
+    "include-media": "^1.4.10",
+    "prettier": "^2.5.1",
+    "sass": "^1.49.9",
+    "sass-loader": "^10.1.1"
   }
 }
