@@ -40,19 +40,17 @@ For detailed explanation on how things work, check out the [documentation](https
 │   │   ├── ui // ui components (Checkbox, NumberInput,...)
 │   │   └── ... // other featured common components
 │   ├── layout // components to be used in layouts
-│   ├── ...
 │   ├── accounts // components grouped by pages
 │   └── payee
 │       └── PayeeInfo.vue // (Component File Naming: Pascal-Case)
 ├── layouts // layout components
 │   ├── default.vue
 │   ├── error.vue // error page
-│   └── ...
 ├── middleware
 ├── mixins
 ├── pages // route pages
 │   ├── ...
-│   ├── payment-info // (Page File Naming: kebab-case)
+│   ├── user // (Page File Naming: kebab-case)
 │   └── index.vue
 ├── plugins
 ├── services // business logics
@@ -60,10 +58,5 @@ For detailed explanation on how things work, check out the [documentation](https
 ├── store // vuex store
 ├── test
 ├── types // all types (interfaces, enums and constants)
-│   ├── ...
-│   └── payments
-│       ├── constants
-│       ├── enums
-│       └── interfaces
 └── utils
 ```
